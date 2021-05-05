@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap');
+/*
+Theme Name: Theme enfant
+Description: Theme enfant de sylvain
+Author: Sylvain
+Template: twentytwenty
+Version: 0.1.0
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --body-bg-color: #ffff;
+    --blue: #2274A5;
+    --grey: #a5a3a3;
+    --black: #0E1116;
+    --red: #DB504A;
+}
+
+body{
+    background: var(--body-bg-color);
+}
+a.comment-reply-link{
+    background: var(--red);
+}
+a#cancel-comment-reply-link{
+   color: var(--red);
+}
+
+.button, .faux-button, .wp-block-button__link, .wp-block-file .wp-block-file__button, input[type="button"], input[type="reset"], input[type="submit"], .bg-accent, .bg-accent-hover:hover, .bg-accent-hover:focus, :root .has-accent-background-color, .comment-reply-link{
+    background: var(--red)!important;
+}
+.scrollToTop-btn {
+    z-index: 999;
+    position: fixed;
+    background: var(--red);
+    color: var(--body-bg-color);
+    width: 45px;
+    height: 45px;
+    right: 0;
+    bottom: 10px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 3px;
+    cursor: pointer;
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.scrollToTop-btn.active {
+    right: 30px;
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.menu-item.current-menu-item a{
+    text-decoration: underline;
+    color: var(--red)!important;
+}
+.menu-item a{
+    color: var(--body-bg-color) !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+.ancestor-wrapper a{
+    color: var(--black) !important;
+}
+.menu-item a:hover{
+    color: var(--red);
+}
+
+.site-description{
+    color: var(--grey) !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+.site-title a{
+    color: var(--body-bg-color) !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+span.toggle-text{
+    color: var(--body-bg-color)!important;
+}
+.toggle-inner{
+    color: var(--body-bg-color)!important;
+}
+.toggle-wrapper::before{
+    opacity: 0.5!important;
+}
+#site-header{
+    position: fixed !important;
+    top: 0 !important;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5)!important;
+    transition: 1s ease;
+}
+#site-header.sticky{
+    background-color: var(--black)!important;
+}
+.entry-header-inner{
+    padding-top: 32px;
+}
+ .archive-header-inner{
+     padding-top: 32px;
+  }
+h1.entry-title{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 30rem;
+}
+.to-the-content-wrapper {
+    margin-top: 24rem;
+}
+.to-the-content-wrapper a{
+    width: 50px;
+    position: absolute;
+    display: flex;
+    left: 50%;
+    border: 1px solid var(--body-bg-color);
+    border-radius: 5px;
+}
+.to-the-content-wrapper a:hover{
+   transform: translateY(10px);
+}
+.has-drop-cap:not(:focus):first-letter,
+.wp-block-button.is-style-outline{
+    color: var(--red)!important;
+}
+.widget-content nav ul li a{
+    color: var(--red)!important;
+}
+
+a.page-numbers{
+    color: var(--red)!important;
+}
+
+span.faux-button{
+    background: var(--red)!important;
+}
+
+.entry-categories a {
+    color: var(--red)!important;
+}
+
+.entry-content a{
+    color: var(--red)!important;
+}
+#submit{
+    background: var(--red)!important;
+}
